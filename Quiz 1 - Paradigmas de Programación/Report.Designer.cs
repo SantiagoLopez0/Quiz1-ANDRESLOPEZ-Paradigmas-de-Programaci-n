@@ -30,7 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.rtxtReport = new System.Windows.Forms.RichTextBox();
-            this.btnReportBack = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -53,16 +52,6 @@
             this.rtxtReport.TabIndex = 1;
             this.rtxtReport.Text = "";
             // 
-            // btnReportBack
-            // 
-            this.btnReportBack.Location = new System.Drawing.Point(329, 557);
-            this.btnReportBack.Name = "btnReportBack";
-            this.btnReportBack.Size = new System.Drawing.Size(173, 34);
-            this.btnReportBack.TabIndex = 2;
-            this.btnReportBack.Text = "Volver a Home";
-            this.btnReportBack.UseVisualStyleBackColor = true;
-            this.btnReportBack.Click += new System.EventHandler(this.btnReportBack_Click);
-            // 
             // btnClose
             // 
             this.btnClose.Location = new System.Drawing.Point(329, 614);
@@ -71,6 +60,7 @@
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "Cerrar";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label2
             // 
@@ -89,7 +79,6 @@
             this.ClientSize = new System.Drawing.Size(514, 660);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnReportBack);
             this.Controls.Add(this.rtxtReport);
             this.Controls.Add(this.label1);
             this.Name = "Report";
@@ -103,7 +92,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox rtxtReport;
-        private System.Windows.Forms.Button btnReportBack;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label2;
     }

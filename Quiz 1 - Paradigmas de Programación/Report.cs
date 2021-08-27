@@ -21,9 +21,9 @@ namespace Quiz_1___Paradigmas_de_Programación
             report.Text = homeReport;
         }
 
-        private void btnReportBack_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
         }
     }
 }
